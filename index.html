@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script src="javascript.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  
+</style>
+</head>
+<body>
+
+
+
+
+<img src="my_logo.jpg.jpg" alt="MY LOGO" style="width: 90px; height:90px;">
+
+<hr></hr>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Home')"> Home</button>
+  <button class="tablinks" onclick="openCity(event, 'About Me')">About Me</button>
+  <button class="tablinks" onclick="openCity(event, 'Resume')">Resume</button>
+  <button class="tablinks" onclick="openCity(event, 'Contact Information')">Contact Information</button>
+  <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
+</div>
+
+<div id ="Home" class="tabcontent">
+  <img src="itsme2.jpg.jpg" alt="Its me" style= "width: 1300px; height:600; ">
+
+
+</div>
+
+<div id= "About Me" class= "tabcontent">
+  <h1 style="text-align:center;"> About Me</h1>
+  <hr></hr>
+  <p><h2> Hi, My name is Makayla Nelson and I am a Junior who attends Coderva Regional High School. I curently take Ecology, Trigonometry, American Studies
+  / American Literature, French III, Web Design and now I am in MaxxPotential Internship. I'm also a student athlete for Huguenot High School (Basketball).</p></h2>
+<p style="text-align: center;"><img src="itsme3.jpg.jpg" alt="Its me" width=430 height=430></p>
+<h2> FUN FACTS ABOUT ME:</h2>
+<ul>
+  <li> My peers sometimes use the terms generous and giving to describe my personality. </li>
+  <li> I am known for being a very ambitious young adult.</li>
+  <li> I enjoy shopping for clothes and shoes.</li>
+  <li> Altough I tend to wear a variety of colors, blue is my favorite color!</li>
+  <li> I try to spend my free time helping out my community by volunteering on the weekends.</li>
+
+
+</ul>
+
+</div>
+
+<div id = "Contact Information" class ="tabcontent">
+  <h1 style= "text-align:center;"> Here are a few ways to Contact Me!!</h1>
+  <hr></hr>
+  <p> * If you have any questions, comments, or concerns feel free to contact me.*</p>
+    <ul>
+      <li> Email: Makayla.Nelson@students.coderva.org </li>
+      <li> Phone: 804-715-7611</li>
+      <li> Instagram: @kay2crzy </li>
+      <p style="text-align: left;"><img src="gmail.jpg" width=130 height=130></p>
+      <p style="text-align: center;"><img src="phone.jpg"  width=130 height=130></p>
+      <p style="text-align: right ;"><img src="instagram.jpg"width=130 height=130></p>
+    </ul>
+</div>
+
+<div id ="Resume" class ="tabcontent">
+  <h1 style="text-align:center;"> Resume</h1>
+
+
+
+
+
+
+  <hr></hr>
+  <h1 style="text-align:center;"><img src="resume.jpg.jpg" alt="resume" width="600" height="600"></h2>
+
+</div>
+
+
+
+
+<div id ="Projects" class= "tabcontent">
+  <h1 style = "text-align:center;"> Projects</h1>
+  <hr></hr>
+  <!--Evereything-->
+<div class="projects-container">
+    <!--Security-->
+    <a href="https://docs.google.com/presentation/d/1UxZImJGmExTSCMTZWeuBEUTDV9xr9rir74oKkTTP_og/edit#slide=id.p" class="item"> 
+      <h2>Security Project #1</h2>
+      <img src="security.jpg" alt="Security Project #1" width=200px height=200px>
+  
+  
+    </a>
+    <!--Ethical Hacking-->
+    <a href="https://docs.google.com/presentation/d/1waG071LW_YQeupdlCb9oRuALd7UCVcHunXEkX5hpYbY/edit#slide=id.p" class="item">
+      <h2>Ethical Hacking </h2>
+      <img src="ethical hacking.jpg" alt="Ethical Hacking" width=200px height=200px>
+      
+    
+    </a>
+    <!--Data-->
+    <a href="https://docs.google.com/presentation/d/1cmsXkHftiEL52Qf4q3eC3F1mBksgA9GuQweeIZlQuBE/edit#slide=id.p" class="item">
+      <h2>Data Project #3</h2>
+      <img src="data.jpeg" alt="Data" width="200px" height=200px>
+  
+  
+    </a>
+    <!--Kyrie-->
+    <a href="https://codepen.io/kay2crzycode/full/KKwwNZr" class="item">
+      <h2>Kyrie Irving!</h2>
+      <img src="kyrie irving.jpg" alt="Kyrie Irving" width="200px" height="200px">
+  
+  
+  </a>
+  </div>
+  
+
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+</script>
+
+</body>
+</html>
+&copy;Makayla Nelson 
